@@ -1,0 +1,39 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/svn\/base64\/scss\/index\.scss}line{font-family:\000033}}
+* {
+  margin: 0px;
+  padding: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/svn\/base64\/scss\/index\.scss}line{font-family:\000038}}
+ul, ol, li {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/svn\/base64\/scss\/index\.scss}line{font-family:\0000312}}
+#dropArea {
+  border: 1px solid #545eff;
+  width: 95%;
+  margin: 0px auto;
+  height: 300px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/svn\/base64\/scss\/index\.scss}line{font-family:\0000319}}
+.imageElem {
+  width: 95%;
+  margin: 0px auto;
+  display: -webkit-box; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/svn\/base64\/scss\/index\.scss}line{font-family:\0000324}}
+  .imageElem li {
+    height: 1.1em;
+    line-height: 1.1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/svn\/base64\/scss\/index\.scss}line{font-family:\0000331}}
+.fileImage {
+  -webkit-box-flex: 1;
+  margin: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/work\/svn\/base64\/scss\/index\.scss}line{font-family:\0000336}}
+.copyText {
+  width: 90%;
+  padding: 5px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  border: 1px solid #ccc; }

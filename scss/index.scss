@@ -1,6 +1,44 @@
+@charset "utf-8";
+//リセット。簡易で。
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
 #dropArea {
     border: 1px solid #545eff;
     width: 95%;
     margin: 0px auto;
     height: 300px;
 }
+
+.imageElem {
+    width: 95%;
+    margin: 0px auto;
+    display: -webkit-box;
+
+    li {
+        height: 1.1em;
+        line-height: 1.1em;
+    }
+}
+
+
+.fileImage {
+    -webkit-box-flex: 1;
+    margin: 5px;
+}
+
+.copyText {
+    width: 90%;
+    padding: 5px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
