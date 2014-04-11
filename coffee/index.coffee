@@ -23,7 +23,7 @@ dropFile = (e) ->
                 elem.innerHTML = '<img class="fileImage" src="' + e.target.result + '">' +
                         '<ul class="fileInfo">' +
                             '<li class="fileName">' + file.name + '</li>' +
-                            '<li class="fileSize">' + file.size + '(Byte)</li>' +
+                            '<li class="fileSize">' + file.size + '(Byte) / base64Size' + e.target.result.length + '(byte)</li>' +
                             '<li class="imageWidth">Width: ' + image.width + ' (px)  height: ' + image.height + ' (px)</li>' +
                             '<li class="imageWidth">css: background-size: ' + (+image.width / 2) + 'px ' + (image.height / 2) + 'px;</li>' +
                             '<li class="fileBase64">' +
