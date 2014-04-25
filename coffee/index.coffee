@@ -7,8 +7,6 @@ dropFile = (e) ->
         image.src = e.target.result
         return image
 
-
-
     files = e.dataTransfer.files
     for i in [0..files.length - 1]
         console.log(files[i])
@@ -27,7 +25,7 @@ dropFile = (e) ->
                             '<li class="imageWidth">Width: ' + image.width + ' (px)  height: ' + image.height + ' (px)</li>' +
                             '<li class="imageWidth">css: background-size: ' + (+image.width / 2) + 'px ' + (image.height / 2) + 'px;</li>' +
                             '<li class="fileBase64">' +
-                                '<input type="text" class="copyText" value="' + e.target.result + '">' +
+                                '<input type="text" readonly class="copyText" value="' + e.target.result + '">' +
                             '</li>' +
                         '</ul>'
                 document.getElementById('result').insertBefore(elem, null)
@@ -36,14 +34,16 @@ dropFile = (e) ->
         reader.readAsDataURL(files[i])
     return;
 
-
 fileOver = (e) ->
     e.stopPropagation()
     e.preventDefault()
-
     e.dataTransfer.dropEffect = 'copy'
     return
 
+selectAll = (e) ->
+
+  return;
+
 window.addEventListener('drop', dropFile, false)
 window.addEventListener('dragover', fileOver, false)
-
+window.addEventListener('focus', selectAll, false)
